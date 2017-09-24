@@ -1,0 +1,11 @@
+.post, #disqus_thread {
+    padding: 0px 50px;
+    margin-top: 50px;
+}
+
+.post-body {
+    margin-top: 25px;
+    text-align: left;
+}
+
+

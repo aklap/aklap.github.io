@@ -1,0 +1,59 @@
+#URLS
+baseurl: "www.alexislaporte.com"
+# Config
+config: "config.yaml"
+# CanonifyUrls: true
+# Site settings
+MetaDataFormat: "yaml"
+# google analytics 
+googleAnalytics: "UA-72981601-1"
+languageCode: "us-en"
+
+#Robots
+enableRobotsTXT: false
+
+# Disqus
+disqusShortname: "alexislaporte.com"
+
+# Site Params
+title: "Alexis La Porte: Web Developer"
+params:
+  email: alexis@alexislaporte.com
+  description: > # this means to ignore newlines until "baseurl:"
+    My personal tech website.
+  author: Alexis La Porte
+# Paths
+publishDir: "public"
+contentDir: "content"
+layoutDir: "layouts"
+# Theme
+themeDir: "themes"
+
+buildDrafts: false
+# Navbar
+menu: 
+  main:
+    - Name: "Portfolio"
+      Identifier: "portfolio" 
+      URL: "/Portfolio/"
+    - Name: "Blog"
+      Identifier: "blog"
+      URL: "/blog/"
+    - Name: "Skills"
+      Identifier: "skills" 
+      URL: "/skills/"
+    - Name: "My Story"
+      Identifier: "about" 
+      URL: "/about/"
+    - Name: "Contact"
+      Identifier: "contact" 
+      URL: "/contact/"  
+# Social Media
+twitter_username: ak_lap
+github_username:  aklap
+
+permalinks:
+  post: /posts/:year/:month/:day/:slug
+Paginate: 5
+PaginatePath: page
+

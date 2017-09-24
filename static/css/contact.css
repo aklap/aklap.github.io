@@ -1,0 +1,55 @@
+section#contact {
+  min-height: 100%;
+  padding: 1.5em;
+}
+
+/*TODO: add a break point so that two appear per row, or display block*/
+.custom-title {
+  margin: .25em;
+  padding: .5em;
+  text-align: center;
+}
+
+.custom-header {
+  font-weight: bold;
+  font-size: 2em;
+  padding: .25em;
+}
+
+a.social-media {
+  text-decoration: none;
+}
+
+.social-media {
+  color: white;
+  display: inline-block;
+  text-align: center;
+  min-width: 120px;
+  padding: .3em;
+  margin: 2em;
+  text-decoration: none;
+  border: 1px solid black;
+}
+
+.social-media:hover {
+  color: black;
+  font-weight: bold;
+  border: .2em solid orange;
+  padding: .18em;
+}
+
+.social-media i {
+  color: grey;
+  padding-top: .8em;
+}
+
+.social-media:hover i {
+  color: black;
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+
+p i {
+  font-weight: bold;
+  padding: .2em;
+}

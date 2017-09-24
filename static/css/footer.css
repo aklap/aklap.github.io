@@ -1,0 +1,14 @@
+footer {
+    padding: .5em;
+    text-align: center;
+    background-color: #b2e4e5;
+    margin-top: auto;
+}
+
+#attribution-info a {
+    color: grey;
+}
+
+#attribution-info {
+    margin: 0;
+}

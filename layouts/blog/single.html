@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{ partialCached "meta.html" . }}
+    <!-- removed head -->
+    <link rel="stylesheet" type="text/css" href="/css/post.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+  <!-- removed nav -->
+  </header>
+
+  <!-- Main -->
+  <div class="main">
+    <article class="post">
+
+      <!-- Header -->
+      <header class="post-header">
+          <h3>{{.Title}}</h3>
+      </header>
+
+      <!-- Post Metadata -->
+      <div class="post-meta">
+          <!-- Publish Date -->
+          <span>{{ .Date.Format "January 2, 2006" }}</span> |
+
+          <!-- Est. Reading Time -->
+          <span>{{ .ReadingTime }} mins to read</span> |
+
+          <!-- Comment Count -->
+          <span class="disqus-comment-count" data-disqus-url={{.Permalink}}>comments</span>
+      </div>
+
+      <!-- Image -->
+        {{ if .Params.Image }}
+            <img src="/img/blog/{{.Params.Image}}"><br>
+        {{ end }}
+
+      <!-- Post Content -->
+      <div class="post-body">
+        {{.Content}}
+      </div>
+    </article>
+
+    <!-- Disqus -->
+    {{ partial "disqus.html" }}
+  </div>
+
+    <!-- Footer -->
+    {{ partialCached "footer.html" . }}
+    
+    <!-- Google Analytics -->
+    {{ template "_internal/google_analytics.html" . }}
+
+    <!-- Disqus count script -->
+    <script id="dsq-count-scr" src="//alexislaporte-com.disqus.com/count.js" async></script>    
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{ partialCached "meta.html" . }}
+    {{ partial "head.html" . }}
+</head>
+<body id="page-top" class="index">
+    <main class="content">
+        <!-- Navigation -->
+        {{ partial "navbar.html" . }}
+        <!-- Intro -->
+        {{ partial "intro.html" . }}
+        <!-- Code -->
+        <section id="code">
+            <!-- OSS Section -->
+            {{ partial "oss.html" . }}
+            <!-- Portfolio Grid Section -->
+            {{ partial "portfolio.html" . }}
+        </section>
+
+        <!-- Story Section -->
+        {{ partial "about.html" . }}
+
+        <!-- Contact Section -->
+        {{ partial "contact.html" . }}
+
+        <!-- Footer -->
+        {{ partialCached "footer.html" . }}
+
+        <!-- Google Analytics -->
+        {{ template "_internal/google_analytics.html" . }}
+    </main>
+</body>
+</html>
