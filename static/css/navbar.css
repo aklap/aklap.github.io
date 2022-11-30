@@ -1,8 +1,4 @@
 /*NAVBAR*/
-a.navbar-brand:hover {
-    font-weight: bolder;
-}
-
 .navbar-brand.page-scroll p {
     color: black;
     font-size: 1.2em;
@@ -23,11 +19,3 @@ a.navbar-brand:hover {
     min-width: 95px;
     letter-spacing: 1.5px;
 }
-
-.navbar-default .navbar-nav>li>a:hover {
-    background-color: orange;
-    padding: 10px;
-    border: 5px solid grey;
-}
-
-/*TODO: change background color of hamburger menu*/
