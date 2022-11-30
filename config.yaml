@@ -1,5 +1,5 @@
 #URLS
-baseurl: "www.alexislaporte.com"
+baseurl: "https://www.alexis.computer"
 # Config
 config: "config.yaml"
 # CanonifyUrls: true
