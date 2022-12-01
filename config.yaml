@@ -29,7 +29,6 @@ buildDrafts: false
 menu: 
   main:
 # Social Media
-twitter_username: ak_lap
 github_username:  aklap
 
 permalinks:
