@@ -28,21 +28,6 @@ buildDrafts: false
 # Navbar
 menu: 
   main:
-    - Name: "Portfolio"
-      Identifier: "portfolio" 
-      URL: "/Portfolio/"
-    - Name: "Blog"
-      Identifier: "blog"
-      URL: "/blog/"
-    - Name: "Skills"
-      Identifier: "skills" 
-      URL: "/skills/"
-    - Name: "My Story"
-      Identifier: "about" 
-      URL: "/about/"
-    - Name: "Contact"
-      Identifier: "contact" 
-      URL: "/contact/"  
 # Social Media
 twitter_username: ak_lap
 github_username:  aklap
