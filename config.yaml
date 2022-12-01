@@ -10,9 +10,6 @@ languageCode: "us-en"
 #Robots
 enableRobotsTXT: false
 
-# Disqus
-disqusShortname: "alexislaporte.com"
-
 # Site Params
 title: "Alexis La Porte: Web Developer"
 params:
