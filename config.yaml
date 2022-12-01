@@ -15,7 +15,7 @@ title: "Alexis La Porte: Web Developer"
 params:
   email: aklaporte@gmail.com
   description: > # this means to ignore newlines until "baseurl:"
-    My personal tech website.
+    My personal website.
   author: Alexis La Porte
 # Paths
 publishDir: "public"
