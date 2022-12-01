@@ -5,8 +5,6 @@ config: "config.yaml"
 # CanonifyUrls: true
 # Site settings
 MetaDataFormat: "yaml"
-# google analytics 
-googleAnalytics: "UA-72981601-1"
 languageCode: "us-en"
 
 #Robots
