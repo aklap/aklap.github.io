@@ -31,25 +31,16 @@ a.social-media {
   border: 1px solid black;
 }
 
-.social-media:hover {
-  color: black;
-  font-weight: bold;
-  border: .2em solid orange;
-  padding: .18em;
-}
-
 .social-media i {
   color: grey;
-  padding-top: .8em;
+  padding: .8em;
 }
 
-.social-media:hover i {
-  color: black;
-  padding-top: .5em;
-  padding-bottom: .5em;
+.social-media p {
+  margin: 0;
 }
 
-p i {
-  font-weight: bold;
-  padding: .2em;
+i {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
 }
