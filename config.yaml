@@ -11,7 +11,7 @@ languageCode: "us-en"
 enableRobotsTXT: false
 
 # Site Params
-title: "Alexis La Porte"
+title: "Alexis La Porte: Web Developer"
 params:
   email: aklaporte@gmail.com
   description: > # this means to ignore newlines until "baseurl:"
