@@ -8,17 +8,12 @@
     <main class="content">
         <!-- Navigation -->
         {{ partial "navbar.html" . }}
-        <!-- Intro -->
-        {{ partial "intro.html" . }}
-        <!-- Code -->
-        <section id="code">
-            <!-- Portfolio Grid Section -->
-            {{ partial "portfolio.html" . }}
-        </section>
-
-        <!-- Contact Section -->
+        <!-- About -->
+        {{ partial "about.html" . }}
+        <!-- Portfolio -->
+        {{ partial "portfolio.html" . }}
+        <!-- Contact -->
         {{ partial "contact.html" . }}
-
         <!-- Footer -->
         {{ partialCached "footer.html" . }}
     </main>

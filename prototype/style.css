@@ -1,0 +1,286 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* END RESET */
+
+* {
+  border: 1px solid red;
+}
+
+html, body {
+  box-sizing: border-box;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* wrapper */
+body {
+  box-sizing: border-box;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header, footer {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+main {
+  width: auto 0;
+
+}
+
+section {
+  height: 100vh;
+  width: auto;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+h1, h2, h3 {
+  font-family: Montserrat;
+}
+
+h2 {
+  margin: 10px;
+  padding: 10px;
+  font-size: 1.75rem;
+}
+
+p {
+  font-weight: 200;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+/* HEADER */
+header {
+  display: flex
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+/* NAVBAR */
+nav {
+  align-items: center;
+  background: black;
+  border: 1px solid red;
+  display: flex
+  justify-content: space-between;
+  padding: 20px;
+  width: 100%;
+}
+
+.logo {
+  color: white;
+  font-family: "Montserrat";
+  font-size: 1rem;
+  letter-spacing: .2em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.links {
+  visibility: hidden;
+}
+
+/* INTRO */
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text {
+  text-align: center;
+  padding: 20px;
+  margin: 15px;
+  /* font-size: 1.5rem; */
+}
+.name {
+  color: red;
+  font-family: Futura;
+  font-size: 1rem;
+  margin-left: .2rem;
+}
+.emoji {
+  font-size: 40px;
+}
+
+.reading-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+button {
+  background-color: gold;
+  border: solid black 1px;
+  color: black;
+  font-size: 1rem;
+  margin: 1rem;
+  padding: .75rem;
+  width: 8rem;
+}
+
+.intro-links {
+  display: grid;
+  grid-template-columns: 3;
+  grid-template-rows: 3;
+}
+
+.divider {
+  visibility: hidden;
+}
+
+.emoji.left {
+  grid-column-start: 1 / 2;
+  grid-row: 2;
+  text-decoration: none;
+  margin: 0.625rem 0;
+  padding: 0.625rem 0;
+}
+.emoji.right {
+  grid-column-start: 3;
+  grid-row: 2;
+  text-decoration: none;
+  margin: 0.625rem 0;
+  padding: 0.625rem 0;
+}
+.intro-links a {
+  grid-column-start: 2;
+  grid-row: 2;
+  margin: 10px;
+  padding: 10px;
+}
+
+/* MEDIA QUERIES */
+/* SMALL */
+
+/* MED-LARGE */
+
+/* PORTFOLIO */
+#portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* default? */
+  padding: 2.5rem;
+}
+.portfolio-links {
+  border: 1px solid red;
+  display: grid;
+
+}
+
+/* CONTACT */
+#contact {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* default? */
+  padding: 2.5rem;
+}
+
+/* TODO: this may not be necessary; change to flex wrap from row because
+content is flowing only in one direction, row to column */
+.social-media-links {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.social-media-link {
+  text-decoration: none;
+  color: grey;
+  border: 1px solid grey;
+  margin: 0.4375rem;
+}
+.social-media-link div {
+  padding: 0.3125rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 5.5rem;
+  height: 5.5rem;
+}
+.social-media-link:hover {
+  color: black;
+  border: 1px solid grey;
+}
+
+/* FOOTER */
+footer {
+  background-color: black;
+}
+
+footer p {
+  color: white;
+  padding: .5rem;
+  text-align: center;
+  background-color: black;
+  color: white;
+  margin-top: auto;
+  
+}
+
+#attribution-info a {
+  color: grey;
+}
+
+#attribution-info {
+  margin: 0;
+}
+

@@ -1,0 +1,133 @@
+<html>
+  <head>
+    <title>Alexis La Porte</title>
+    <!-- Font Awesome 5 -->
+    <script src="https://use.fontawesome.com/784cf28c80.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicons/computer_love.ico">
+    <!-- Custom fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Droid+Serif:400,700,400italic,700italic|Roboto+Slab:400,100,300,700|Raleway:300" rel='stylesheet' type='text/css'>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <main>
+      <header>
+        <nav>
+          <a class="logo" href="/">
+            <h1>Alexis La Porte</h1>
+          </a>
+          <!-- MOBILE MENU -->
+          <div class="mobile-menu">
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="links"></div>
+        </nav>
+      </header>
+        <section id="hero">
+          <div class="text">
+            <p>Hello! <span class="emoji">👋</span></p>
+            <p>
+              I'm <span class="name">Alexis</span>, a web developer based in
+              <span class="emoji">🗽</span><br /><br />Refactoring, exploring
+              code bases, & sharing knowledge are my favorite things!
+            </p>
+
+            <p class="reading-links">
+              <a href="https://cohost.org/alexislp" target="_blank"
+                >Read my writing <span class="emoji">✍🏼</span></a
+              >
+              <span class="divider">| |</span>
+              <a href="https://github.com/aklap" target="_blank"
+                >Read my code <span class="emoji">💻</span></a
+              >
+            </p>
+          </div>
+          <div class="text">
+            <div class="intro-links">
+              <span class="emoji left">👉🏼</span> 
+              <a href="#contact"><p>I'm currently looking for a new opportunities</p><p><br>Get in touch!</p></a> 
+              <span class="emoji right">👈🏼</span>
+            </div>
+            <button class="btn" href="#contact" role="button">Learn More</button>
+          </div>
+      </section>
+      <!-- PORTFOLIO -->
+      <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-links">
+          <div class="portfolio-link">
+            <a href="#" class="portfolio-link">
+              <figure>
+                <img src="img/portfolio/#.png" alt="">
+                <figcap>
+                  PatchCord: Rails web app
+                </figcap>
+              </figure>
+            </a>
+          </div>
+            <a href="#" class="portfolio-link">
+              <figure>
+                <img src="img/#.png" class="" alt="">
+                <figcap>
+                  Matt Soloflow: A Rails web app
+                </figcap>
+              </figure>
+            </a>
+            <div class="portfolio-link">
+              <a href="https://github.com/exercism/exercism.io/pulls?utf8=%E2%9C%93&q=is%3Apr%20is%3Amerged%20author%3Aaklap%20">
+                <figure>
+                  <img src="img/#.png" class="" alt="">
+                  <figcap>Exercism</figcap>
+                </figure>
+              </a>
+            </div>
+        </div>
+      </section>
+      <!-- CONTACT SECTION -->
+      <section id="contact">
+        <h2 class="section-heading">Contact Me</h2>
+        <div class="social-media-links">
+          <!-- Email -->
+          <a class="social-media-link" href="mailto:aklaporte@gmail.com" title="E-mail">
+            <div>
+              <i class="fas fa-envelope fa-2x"></i>
+              <span>Email</span>
+            </div>
+          </a>
+          <!-- GitHub -->
+          <a class="social-media-link" href="https://github.com/aklap" title="GitHub">
+            <div>
+              <i class="fab fa-github fa-2x"></i>
+              <span>GitHub</span>
+            </div>
+          </a>
+          <!-- LinkedIn -->
+          <a class="social-media-link" href="https://linkedin.com/in/alexislaporte" title="LinkedIn">
+            <div>
+              <i class="fab fa-linkedin fa-2x"></i>
+              <span>LinkedIn</span>
+            </div>
+          </a>
+          <!-- Mastodon -->
+          <a class="social-media-link" href="https://techhub.social/@alexislp" title="Mastodon">
+            <div>
+              <i class="fab fa-mastodon fa-2x"></i>
+              <span>Mastodon</span>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright Alexis&copy; {{ now.Format "2006"}} {{ or .Site.Params.Author }} - All Rights Reserved. &nbsp;
+        <p id="attribution-info">Powered by <a href="https://gohugo.io" target="_blank">Hugo</a></p>
+    </div>
+    </footer>
+  </body>
+</html>
