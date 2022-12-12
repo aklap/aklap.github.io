@@ -123,7 +123,7 @@ header {
 
 /* NAVBAR */
 nav {
-  align-items: center;
+  align-items: end;
   background: black;
   display: flex;
   justify-content: space-between;
