@@ -224,7 +224,7 @@ nav {
   padding: 0.625rem 0;
 }
 /* MEDIA QUERIES */
-@media (min-width: 650px) {
+@media (min-width: 650px, orientation: portrait) {
   .reading-links {
     flex-direction: row;
   }
@@ -234,7 +234,23 @@ nav {
     margin: 0.5rem;
   }
 }
-
+@media (orientation: landscape) {
+  #about {
+    padding-top: 1rem;
+  }
+  #about h2 {
+    margin: 0;
+  }
+  p.reading-links {
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
+  span.spacer {
+    visibility: visible;
+    display: inline;
+    margin: .5rem;
+  }
+}
 /* PORTFOLIO */
 #portfolio {
   align-items: center;
